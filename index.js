@@ -16,7 +16,7 @@ module.exports = function(grunt, options) {
     options = {};
   }
   minify = (_ref = grunt.option('minify')) != null ? _ref : false;
-  libDir = (_ref1 = (_ref2 = options.dir) != null ? _ref2.lib : void 0) != null ? _ref1 : "node_modules/underscore-ebook-template/lib";
+  libDir = (_ref1 = (_ref2 = options.dir) != null ? _ref2.lib : void 0) != null ? _ref1 : "node_modules/underscore-ebook-template-ja/lib";
   srcDir = (_ref3 = (_ref4 = options.dir) != null ? _ref4.src : void 0) != null ? _ref3 : "src";
   distDir = (_ref5 = (_ref6 = options.dir) != null ? _ref6.dist : void 0) != null ? _ref5 : "dist";
   metaSrcDir = (_ref7 = (_ref8 = options.dir) != null ? _ref8.meta : void 0) != null ? _ref7 : "" + srcDir + "/meta";

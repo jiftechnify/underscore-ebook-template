@@ -10,7 +10,7 @@ fs      = require 'fs'
 module.exports = (grunt, options = {}) ->
   minify      = grunt.option('minify') ? false
 
-  libDir      = options.dir?.lib       ? "node_modules/underscore-ebook-template/lib"
+  libDir      = options.dir?.lib       ? "node_modules/underscore-ebook-template-ja/lib"
   srcDir      = options.dir?.src       ? "src"
   distDir     = options.dir?.dist      ? "dist"
   metaSrcDir  = options.dir?.meta      ? "#{srcDir}/meta"
