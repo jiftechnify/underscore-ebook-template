@@ -1,6 +1,7 @@
 # Underscore eBook Template
 
 これは Underscore 電子書籍テンプレートを日本語訳向けに改変したものです。
+
 Underscore eBook Template for Japanese translation, by [@jiftechnify](https://github.com/jiftechnify)
 
 ***
