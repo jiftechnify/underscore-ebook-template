@@ -1,5 +1,10 @@
 # Underscore eBook Template
 
+これは Underscore 電子書籍テンプレートを日本語訳向けに改変したものです。
+Underscore eBook Template for Japanese translation, by [@jiftechnify](https://github.com/jiftechnify)
+
+***
+
 Copyright 2016 Underscore Consulting LLP.
 
 Source code licensed under the [Apache License 2.0][license].
@@ -63,7 +68,7 @@ Build the image for the book environment
 docker build -t underscore/book .
 ```
 
-Now copy `docker-compose.yml` to the root of the book you're working on and run it. 
+Now copy `docker-compose.yml` to the root of the book you're working on and run it.
 
 ```bash
 docker-compose run book bash

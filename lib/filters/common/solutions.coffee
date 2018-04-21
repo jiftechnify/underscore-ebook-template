@@ -59,10 +59,10 @@ solutionHeading = (solution, template, level) ->
   ])
 
 linkToSolution = (solution) ->
-  pandoc.Para([ pandoc.Link(["", [], []], [ pandoc.Str("See the solution")       ], [ "#" + solution.solutionLabel, "" ]) ])
+  pandoc.Para([ pandoc.Link(["", [], []], [ pandoc.Str("解答を見る")     ], [ "#" + solution.solutionLabel, "" ]) ])
 
 linkToExercise = (solution) ->
-  pandoc.Para([ pandoc.Link(["", [], []], [ pandoc.Str("Return to the exercise") ], [ "#" + solution.exerciseLabel, "" ]) ])
+  pandoc.Para([ pandoc.Link(["", [], []], [ pandoc.Str("演習問題に戻る") ], [ "#" + solution.exerciseLabel, "" ]) ])
 
 # Data types ------------------------------------
 

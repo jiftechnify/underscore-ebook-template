@@ -1,7 +1,7 @@
 {
-  "name": "underscore-ebook-template",
-  "version": "0.6.2",
-  "description": "Template for Underscore eBooks",
+  "name": "underscore-ebook-template-ja",
+  "version": "0.1.0",
+  "description": "Template for Underscore eBooks(Japanese version)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

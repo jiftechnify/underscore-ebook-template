@@ -17,7 +17,7 @@ addToggle = (className, name, additionalClasses) ->
       .wrap('<div class="panel panel-default #{extraClasses}"></div>')
       .hide()
 
-    $("<a href=\"javascript:void 0\"><div class=\"panel-heading\"><h5> #{name} (click to reveal)</h5></div></a>")
+    $("<a href=\"javascript:void 0\"><div class=\"panel-heading\"><h5> #{name} (クリックして表示)</h5></div></a>")
       .insertBefore(toggleable)
       .click(theToggling)
 
@@ -26,6 +26,5 @@ addToggle = (className, name, additionalClasses) ->
 
 $ ->
   toc.init('.toc-toggle', '.cover-notes,.toc-contents')
-  addToggle('solution', 'Solution')
+  addToggle('solution', '解答')
   return
-

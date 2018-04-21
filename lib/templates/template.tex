@@ -40,6 +40,10 @@ $endif$
   \fi
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
   \newcommand{\euro}{€}
+
+% to support CJK characters!
+\usepackage{xeCJK}
+
 $if(mainfont)$
     \setmainfont$mainfont$
 $else$
@@ -49,6 +53,20 @@ $else$
       BoldItalicFont=Lato-BlackItalic,
       BoldFont=Lato-Bold,
       ItalicFont=Lato-Italic]{Lato-Regular}
+$endif$
+
+$if(CJKmainfont)$
+    \setCJKmainfont{$CJKmainfont$}
+$else$
+    \setCJKmainfont[
+      Color=primary,
+      Path=$lib-dir$/fonts/Noto/,
+      AutoFakeSlant=0.2,
+      BoldFont=NotoSansCJK-Bold,
+      ItalicFont=NotoSansCJK-Regular,
+      BoldItalicFont=NotoSansCJK-Bold,
+      ItalicFeatures={FakeSlant=0.2},
+      BoldItalicFeatures={FakeSlant=0.2}]{NotoSansCJK-Regular}
 $endif$
 
 $if(sansfont)$
@@ -62,10 +80,37 @@ $else$
       ItalicFont=Lato-Italic]{Lato-Regular}
 $endif$
 
+$if(CJKsansfont)$
+    \setCJKsansfont{$CJKsansfont$}
+$else$
+    \setCJKsansfont[
+      Color=primary,
+      Path=$lib-dir$/fonts/Noto/,
+      AutoFakeSlant=0.2,
+      BoldFont=NotoSansCJK-Bold,
+      ItalicFont=NotoSansCJK-Regular,
+      BoldItalicFont=NotoSansCJK-Bold,
+      ItalicFeatures={FakeSlant=0.2},
+      BoldItalicFeatures={FakeSlant=0.2}]{NotoSansCJK-Regular}
+$endif$
+
 $if(monofont)$
     \setmonofont[Mapping=tex-ansi]{$monofont$}
 $else$
     \setmonofont[Mapping=tex-ansi]{Bitstream Vera Sans Mono}
+$endif$
+
+$if(CJKmonofont)$
+    \setCJKmonofont{$CJKmonofont$}
+$else$
+    \setCJKmonofont[
+      Path=$lib-dir$/fonts/Noto/,
+      AutoFakeSlant=0.2,
+      BoldFont=NotoSansCJK-Bold,
+      ItalicFont=NotoSansCJK-Regular,
+      BoldItalicFont=NotoSansCJK-Bold,
+      ItalicFeatures={FakeSlant=0.2},
+      BoldItalicFeatures={FakeSlant=0.2}]{NotoSansCJK-Regular}
 $endif$
 
 $if(mathfont)$
@@ -120,6 +165,7 @@ $if(graphics)$
 % Scale images if necessary, so that they will not overflow the page
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
+
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 $endif$
 \ifxetex
