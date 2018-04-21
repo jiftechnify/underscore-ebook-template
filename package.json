@@ -1,6 +1,6 @@
 {
   "name": "underscore-ebook-template-ja",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Template for Underscore eBooks(Japanese version)",
   "main": "index.js",
   "scripts": {
